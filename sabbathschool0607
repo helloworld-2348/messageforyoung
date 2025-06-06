@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안식일 인포그래픽: 생명을 살리는 날</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            border: 1px solid #e5e7eb;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #111827;
+        }
+        .highlight {
+            color: #c2410c;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-amber-50">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-3xl">
+
+        <!-- 1. 타이틀 -->
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-800 mb-2">안식일, 사람을 위해 있는 날</h1>
+            <p class="text-lg md:text-xl text-slate-600">예수님은 어떻게 안식일의 주인이 되셨나?</p>
+        </header>
+
+        <!-- 2. 섹션 1: 문제 제기 -->
+        <section class="section-card">
+            <h2 class="section-title">"안식일에 병 고치는 것이 옳으니이까?"</h2>
+            <div class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- 바리새인 -->
+                <div class="text-center p-4 rounded-lg w-full md:w-1/3">
+                    <svg class="w-20 h-20 mx-auto text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <h3 class="font-bold mt-2 text-slate-800">고발하려는 자들</h3>
+                    <p class="text-sm text-slate-500">규율을 내세워<br>예수를 지켜보았다</p>
+                </div>
+                <!-- 대립 -->
+                <div class="text-4xl font-bold text-slate-300">VS</div>
+                <!-- 손 마른 사람 -->
+                <div class="text-center p-4 rounded-lg w-full md:w-1/3">
+                     <svg class="w-20 h-20 mx-auto text-amber-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="font-bold mt-2 text-slate-800">도움이 필요한 자</h3>
+                    <p class="text-sm text-slate-500">고통 속에서<br>치유를 기다렸다</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 섹션 2: 예수님의 가르침 -->
+        <section class="section-card bg-emerald-50 border-emerald-200">
+            <h2 class="section-title">"사람이 양보다 얼마나 더 귀하냐?"</h2>
+            <div class="flex items-center justify-center space-x-4 md:space-x-8">
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                    <p class="font-bold text-lg mt-2 text-emerald-900">사람</p>
+                </div>
+                <div class="text-5xl font-black text-emerald-500">&gt;</div>
+                <div class="text-center">
+                    <svg class="w-24 h-24 mx-auto text-emerald-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 16.111c1.293-1.062 2.07-2.627 2.07-4.322 0-3.36-2.52-6.088-5.635-6.088-3.114 0-5.634 2.728-5.634 6.088 0 1.695.777 3.26 2.07 4.322"/>
+                        <path d="M15.086 16.142c.046.03.09.06.132.09.43.295.823.63 1.17 1.003.345.37.625.793.812 1.255.187.46.28.956.28 1.472 0 .498-.088.977-.255 1.427-.168.45-.41.866-.713 1.23-.304.363-.66.67-1.055.91-.395.24-.82.39-1.26.435-.443.044-.886.01-1.312-.09-.425-.1-.828-.27-1.192-.49-.364-.22-.685-.49-.95-.79-.264-.3-.47-.63-.61-.98-.14-.35-.21-.72-.21-1.1v-.01c0-.482.09-.95.27-1.4.18-.45.45-.87.8-1.24.35-.37.76-.69 1.21-.95.45-.26.94-.46 1.45-.58.5-.12.9-.1 1.4-.1z" transform="translate(1.059 1.34)"/>
+                        <path d="M8.914 16.142c-.046.03-.09.06-.132.09-.43.295-.823.63-1.17 1.003-.345.37-.625.793-.812 1.255-.187.46-.28.956-.28 1.472 0 .498.088.977.255 1.427.168.45-.41.866-.713 1.23-.304.363-.66.67-1.055.91-.395.24-.82.39-1.26.435-.443.044-.886.01-1.312-.09-.425-.1-.828-.27-1.192-.49-.364-.22-.685-.49-.95-.79-.264-.3-.47-.63-.61-.98-.14-.35-.21-.72-.21-1.1v-.01c0-.482.09-.95.27-1.4.18-.45.45-.87.8-1.24.35-.37.76-.69 1.21-.95.45-.26.94-.46 1.45-.58.5-.12.9-.1 1.4-.1z" transform="translate(1.059 1.34)"/>
+                    </svg>
+                    <p class="font-bold text-lg mt-2 text-emerald-900">양</p>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-emerald-800">예수님은 규정보다 <span class="highlight text-emerald-600">생명의 가치</span>가 더 중요하다고 가르치셨습니다.<br>안식일은 선을 행하는 날입니다.</p>
+        </section>
+
+        <!-- 4. 섹션 3: 핵심 사건 -->
+        <section class="section-card">
+            <h2 class="section-title">"네 손을 내밀라"</h2>
+            <div class="flex flex-col items-center">
+                <!-- 손 변화 -->
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="text-center">
+                        <svg class="w-24 h-24 text-slate-400" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.25 6.75h-1.559a4.502 4.502 0 00-4.32 3.936c-.023.238-.036.48-.05.726-.089.02-.177.043-.266.066-1.06.275-1.442 1.245-1.22 2.22.192.86.992 1.518 1.902 1.518h.274c.26 0 .51-.06.74-.18.17-.09.32-.2.47-.31.33-.25.64-.52.93-.81.45-.44.82-.93 1.1-1.46.28-.53.43-1.1.43-1.69 0-.6-.15-1.17-.43-1.69-.28-.53-.65-1.02-1.1-1.46-.29-.29-.6-.56-.93-.81a2.31 2.31 0 00-.47-.31c-.23-.12-.48-.18-.74-.18h-.274c-.45 0-.85.17-1.15.45-.23.21-.4.49-.5.8-.12.38.11.79.49.91.38.12.79-.11.91-.49.03-.09.07-.17.14-.24.1-.1.22-.15.35-.15h.274c.13 0 .26.03.38.09.08.05.16.1.23.16.2.19.38.4.53.64.19.29.3.62.3.97s-.11.68-.3.97c-.15.24-.33.45-.53.64-.07.06-.15.11-.23.16-.12.06-.25.09-.38.09h-.274c-.58 0-1.07-.4-1.22-.96-.13-.57.17-1.15.74-1.32.06-.02.13-.03.19-.05.02-.28.03-.56.06-.83a3.001 3.001 0 012.88-2.623h1.56c.41 0 .75.34.75.75s-.34.75-.75.75zM8 15.5c0-.83.67-1.5 1.5-1.5h3c.83 0 1.5.67 1.5 1.5v3c0 .83-.67 1.5-1.5 1.5h-3c-.83 0-1.5-.67-1.5-1.5v-3z"/>
+                        </svg>
+                        <p class="mt-2 text-sm text-slate-500">오그라든 손</p>
+                    </div>
+                    <svg class="w-12 h-12 text-amber-500" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                    <div class="text-center">
+                        <svg class="w-24 h-24 text-amber-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M12.378 1.602a.75.75 0 00-.756 0L3.366 6.098a.75.75 0 00.434 1.348h16.4a.75.75 0 00.434-1.348L12.378 1.602zM3.75 9a.75.75 0 00-.75.75v6c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-6a.75.75 0 00-.75-.75H3.75zM12 21.75a1.5 1.5 0 01-1.5-1.5V6.75a1.5 1.5 0 013 0v13.5a1.5 1.5 0 01-1.5 1.5z" />
+                        </svg>
+                        <p class="mt-2 text-sm font-bold text-amber-800">회복된 손</p>
+                    </div>
+                </div>
+                
+                <!-- 상반된 반응 -->
+                <div class="mt-8 pt-8 border-t w-full flex flex-col md:flex-row justify-around space-y-6 md:space-y-0">
+                    <div class="text-center">
+                        <h3 class="font-bold text-lg text-green-700 mb-2">기쁨과 회복</h3>
+                        <p class="text-slate-600">치유받은 사람과 무리는<br>하나님의 능력을 보았다.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-bold text-lg text-red-700 mb-2">분노와 모의</h3>
+                        <p class="text-slate-600">바리새인들은 예수를 없앨<br>궁리를 시작했다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 섹션 4: 핵심 메시지 -->
+        <section class="section-card bg-slate-700 text-white border-slate-600">
+             <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <svg class="w-20 h-20 text-amber-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-4.5 0V6.75A2.25 2.25 0 0115.75 4.5h1.5a2.25 2.25 0 012.25 2.25v1.5m-4.5 0h4.5m-4.5 0l-3-3" />
+                </svg>
+                <blockquote class="text-center md:text-left">
+                    <p class="text-xl md:text-2xl font-bold leading-relaxed">"안식일이 사람을 위하여 생긴 것이지,<br>사람이 안식일을 위하여 생긴 것이 아니다."</p>
+                    <cite class="block text-right mt-2 text-amber-300 not-italic">- 마가복음 2:27</cite>
+                </blockquote>
+            </div>
+            <p class="text-center mt-6 text-slate-300">안식일은 우리를 얽매는 규칙이 아닌, <span class="text-white font-bold">참된 쉼과 회복, 자유</span>를 위한 하나님의 선물입니다.</p>
+        </section>
+
+        <!-- 6. 섹션 5: 우리에게 주는 교훈 -->
+        <section class="section-card text-center bg-white">
+            <h2 class="section-title">나의 안식일은 어떠한가?</h2>
+            <svg class="w-16 h-16 mx-auto text-amber-500 mb-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+            </svg>
+            <p class="text-lg text-slate-700 leading-relaxed">
+                오늘 나의 안식일에는<br>
+                <span class="highlight">"선을 행하는 일"</span>과 <span class="highlight">"생명을 살리는 일"</span>이 있습니까?
+            </p>
+            <div class="mt-6 flex justify-center items-center space-x-4 text-slate-500">
+                <div class="text-center">
+                    <svg class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    <span class="text-xs">위로</span>
+                </div>
+                <div class="text-center">
+                    <svg class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                    <span class="text-xs">나눔</span>
+                </div>
+                 <div class="text-center">
+                    <svg class="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.482L7 21h4.125c.621 0 1.202-.248 1.625-.675a4.47 4.47 0 00-1.162-3.162.527.527 0 01.03-.728l1.12-1.02a.527.527 0 01.758 0l1.12 1.02a.527.527 0 01.03.728 4.47 4.47 0 00-1.162 3.162c.423.427 1.004.675 1.625.675H17l1.727-3.268A9.01 9.01 0 0012 20.25z" /></svg>
+                    <span class="text-xs">봉사</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
