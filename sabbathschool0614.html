@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0614 안교교과 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .infographic-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-left: 8px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .infographic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .card-border-blue { border-color: #3b82f6; }
+        .card-border-green { border-color: #10b981; }
+        .card-border-amber { border-color: #f59e0b; }
+        .card-border-indigo { border-color: #6366f1; }
+        .card-border-sky { border-color: #0ea5e9; }
+        .card-border-rose { border-color: #f43f5e; }
+
+        .icon-bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1.5rem;
+        }
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            color: white;
+        }
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #e5e7eb;
+            padding-left: 1rem;
+            margin-top: 1rem;
+            color: #4b5563;
+        }
+        .source {
+            text-align: right;
+            font-weight: 500;
+            margin-top: 1rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">예수님의 부르심</h1>
+            <p class="text-xl text-gray-500">2025년 6월 14일 안식일학교 교과</p>
+        </header>
+
+        <!-- Scripture & Commentary Card -->
+        <div class="infographic-card card-border-blue">
+            <div class="flex items-center">
+                <div class="icon-bg bg-blue-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-blue-800">연구 범위</h2>
+                    <p class="text-gray-600 mt-1"><strong>성경 본문:</strong> 마가복음 3:13-19; 누가복음 6:12-31; 마태복음 5-7</p>
+                    <p class="text-gray-600"><strong>참고 자료:</strong> 시대의 소망 30-31장</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keytext Card -->
+        <div class="infographic-card card-border-green">
+            <div class="flex items-start">
+                <div class="icon-bg bg-green-500 flex-shrink-0">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7h1a2 2 0 012 2v5a2 2 0 01-2 2h-1m-6 0H6a2 2 0 01-2-2V9a2 2 0 012-2h1M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-green-800">기억절</h2>
+                    <blockquote>
+                        <p>"그 무렵에 예수께서 기도하려고 산으로 떠나가서, 밤을 새우면서 하나님께 기도하셨다. 날이 밝을 때에, 예수께서 자기의 제자들을 부르시고, 그 가운데서 열둘을 뽑으셨다. 그는 그들을 사도라고도 부르셨는데"</p>
+                    </blockquote>
+                    <p class="source">누가복음 6:12, 13 (새번역)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashlight Card -->
+        <div class="infographic-card card-border-amber">
+            <div class="flex items-start">
+                <div class="icon-bg bg-amber-500 flex-shrink-0">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-amber-800">핵심 통찰</h2>
+                    <blockquote>
+                        <p>"제자들을 훈련시키기 위해 예수께서는 복잡한 도시에서 물러나 조용한 들과 산을 택하셨는데, 이런 장소는... 더 잘 조화되었다. ...예수께서는 당신께서 친히 창조하신 작품들에 둘려 있는 곳에서 ...생각을 인위적인 것들에서 자연적인 것들로 전환시킬 수 있으셨다. 천연계의 사물의 성장과 발육에 그리스도의 나라의 원칙이 나타났다."</p>
+                    </blockquote>
+                    <p class="source">시대의 소망, 291</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Into the story Card -->
+        <div class="infographic-card card-border-sky">
+            <div class="flex items-start">
+                <div class="icon-bg bg-sky-500 flex-shrink-0">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-sky-800">평지에서의 가르침</h2>
+                    <p class="text-gray-500 mb-4">누가복음 6:17-31 요약</p>
+                    <ul class="space-y-3 list-disc list-inside text-gray-700">
+                        <li>예수께서 산에서 내려오시자 수많은 무리가 말씀과 치유를 구하며 모여들었습니다.</li>
+                        <li><strong>복과 화 선언:</strong> 가난한 자, 굶주린 자, 우는 자에게 복을, 부요한 자, 배부른 자, 웃는 자에게 화를 선포하셨습니다.</li>
+                        <li><strong>원수 사랑:</strong> "너희 원수를 사랑하며 너희를 미워하는 자를 선대하며 너희를 저주하는 자를 위하여 축복하며 너희를 모욕하는 자를 위하여 기도하라."</li>
+                        <li><strong>황금률:</strong> "남에게 대접을 받고자 하는 대로 너희도 남을 대접하라."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Punch lines Card -->
+        <div class="infographic-card card-border-rose">
+            <div class="flex items-start">
+                <div class="icon-bg bg-rose-500 flex-shrink-0">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-rose-800">핵심 구절</h2>
+                    <div class="space-y-4 mt-4">
+                        <p class="text-gray-700">"너희는 남에게 보이려고 의로운 일을... 하지 않도록 조심하여라." <span class="text-sm text-gray-500">(마 6:1)</span></p>
+                        <p class="text-gray-700">"네 하나님 여호와를 경외하고 그를 사랑하며 마음을 다하고 뜻을 다하여 네 하나님 여호와를 섬기라." <span class="text-sm text-gray-500">(신 10:12)</span></p>
+                        <p class="text-gray-700">"겸손과 여호와를 경외함의 보상은 재물과 영광과 생명이니라." <span class="text-sm text-gray-500">(잠 22:4)</span></p>
+                        <p class="text-gray-700">"우리가 선을 행하되 낙심하지 말지니 포기하지 아니하면 때가 이르매 거두리라." <span class="text-sm text-gray-500">(갈 6:9)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Further insight Card -->
+        <div class="infographic-card card-border-indigo">
+            <div class="flex items-start">
+                <div class="icon-bg bg-indigo-500 flex-shrink-0">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-indigo-800">더 깊은 묵상</h2>
+                     <div class="space-y-4 mt-4">
+                        <blockquote>
+                            <p>"갈릴리의 어부들을 부르신 그리스도께서는 지금도 당신의 사업에 사람들을 부르고 계신다. 그리고 그리스도께서는 최초의 제자들을 통하여 하셨던 것처럼 우리를 통하여 당신의 능력을 나타내기를 즐겨하신다."</p>
+                            <p class="source">시대의 소망, 297</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>"하나님께서는 품성에 인간적 요소가 있는 그대로 사람들을 취하셔서 당신의 사업을 위하여 훈련시키실 것이다... 진리에 대한 지식과 실천을 통하여, 그리스도의 은혜를 통하여 당신의 형상으로 변화될 수 있도록 하기 위하여 택함을 받는다."</p>
+                            <p class="source">시대의 소망, 294</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
