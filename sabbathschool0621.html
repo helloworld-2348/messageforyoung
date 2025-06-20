@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0621 안교교과 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .infographic-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-left: 8px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .infographic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .card-border-blue { border-color: #3b82f6; }
+        .card-border-green { border-color: #10b981; }
+        .card-border-amber { border-color: #f59e0b; }
+        .card-border-sky { border-color: #0ea5e9; }
+        .card-border-rose { border-color: #f43f5e; }
+        .card-border-indigo { border-color: #6366f1; }
+
+        .icon-bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            color: white;
+        }
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #e5e7eb;
+            padding-left: 1rem;
+            margin-top: 1rem;
+            color: #4b5563;
+        }
+        .source {
+            text-align: right;
+            font-weight: 500;
+            margin-top: 1rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">믿음의 군사 (Faith-full Soldier)</h1>
+            <p class="text-xl text-gray-500">2025년 6월 21일 안식일학교 교과</p>
+        </header>
+
+        <!-- Scripture & Commentary Card -->
+        <div class="infographic-card card-border-blue">
+            <div class="flex items-center">
+                <div class="icon-bg bg-blue-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-blue-800">연구 범위</h2>
+                    <p class="text-gray-600 mt-1"><strong>성경 본문:</strong> 마태복음 8:5-13; 마태복음 12:22-28; 누가복음 7:1-17</p>
+                    <p class="text-gray-600"><strong>참고 자료:</strong> 시대의 소망 32-33장</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keytext Card -->
+        <div class="infographic-card card-border-green">
+            <div class="flex items-start">
+                <div class="icon-bg bg-green-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7h1a2 2 0 012 2v5a2 2 0 01-2 2h-1m-6 0H6a2 2 0 01-2-2V9a2 2 0 012-2h1M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-green-800">기억절</h2>
+                    <blockquote>
+                        <p>"예수께서 들으시고 놀랍게 여겨 따르는 자들에게 이르시되 내가 진실로 너희에게 이르노니 이스라엘 중 아무에게서도 이만한 믿음을 보지 못하였노라"</p>
+                    </blockquote>
+                    <p class="source">마태복음 8:10 (개역개정)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashlight Card -->
+        <div class="infographic-card card-border-amber">
+            <div class="flex items-start">
+                <div class="icon-bg bg-amber-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-amber-800">핵심 통찰 (Flashlight)</h2>
+                    <blockquote>
+                        <p>"백부장을 그리스도에게 추천하였던 유대 지도자들은 저희가 얼마나 복음의 정신과 동떨어져 있는지를 나타냈다. 그들은 하나님의 긍휼하심을 요구할 수 있는 우리의 자격은 오로지 우리의 큰 필요 뿐이라는 것을 인식하지 못했다... 그러나 백부장은 자신에 대하여 '나는 감당치 못하겠나이다'고 말하였다. 그의 마음은 그리스도의 은혜로 말미암아 감동을 받았다."</p>
+                    </blockquote>
+                    <p class="source">시대의 소망, 316</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Into the story Card -->
+        <div class="infographic-card card-border-sky">
+            <div class="flex items-start">
+                <div class="icon-bg bg-sky-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-sky-800">이야기 속으로 (Into the Story)</h2>
+                    <div class="space-y-4 mt-4 text-gray-700">
+                        <div>
+                            <h3 class="font-bold text-lg text-sky-900">백부장의 종을 고치심 (눅 7장)</h3>
+                            <p>한 백부장이 사랑하는 종의 병을 고치고자 유대 장로들을 통해 예수께 간청했습니다. 그는 자신을 "주를 제 집에 모실 자격이 없다"고 낮추며, 오직 "말씀만 하시면 제 하인이 나을 것"이라는 절대적인 믿음을 보였습니다.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-sky-900">예수와 바알세불 (마 12장)</h3>
+                            <p>예수께서 귀신 들려 눈 멀고 말 못하는 사람을 고치시자, 무리는 놀랐지만 바리새인들은 "귀신의 왕 바알세불의 힘을 빌려 귀신을 쫓아낸다"고 비난했습니다. 예수께서는 "내가 하나님의 영을 힘입어 귀신들을 쫓아낸다면 하나님 나라가 이미 너희에게 온 것이다"라고 선포하시며 그들의 논리를 반박하셨습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Punch lines Card -->
+        <div class="infographic-card card-border-rose">
+            <div class="flex items-start">
+                <div class="icon-bg bg-rose-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-rose-800">핵심 구절 (Punch Lines)</h2>
+                    <div class="space-y-4 mt-4">
+                        <p class="text-gray-700">"큰 산아, 네가 무엇이냐? 스룹바벨 앞에서는 평지일 뿐이다." <span class="text-sm text-gray-500">(슥 4:7)</span></p>
+                        <p class="text-gray-700">"믿음이 없이는 하나님을 기쁘시게 하지 못하나니..." <span class="text-sm text-gray-500">(히 11:6)</span></p>
+                        <p class="text-gray-700">"여러분은 서로 짐을 나눠 지십시오. 그렇게 함으로 여러분은 그리스도의 법을 완성하게 될 것입니다." <span class="text-sm text-gray-500">(갈 6:2)</span></p>
+                        <p class="text-gray-700">"마귀가 모든 시험을 다 한 후에 얼마 동안 떠나니라" <span class="text-sm text-gray-500">(눅 4:13)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Further insight Card -->
+        <div class="infographic-card card-border-indigo">
+            <div class="flex items-start">
+                <div class="icon-bg bg-indigo-500">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" /></svg>
+                </div>
+                <div>
+                    <h2 class="text-indigo-800">더 깊은 묵상 (Further Insight)</h2>
+                     <div class="space-y-4 mt-4">
+                        <blockquote>
+                            <p>"성령의 역사를 거절하는 자는 회개하고 믿을 수 없는 자리에 두는 것이다."</p>
+                            <p class="source">시대의 소망, 321</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>"의심하고 떠는 그대들이여 쳐다보라. 대개 예수께서 살아계셔서 우리를 위하여 간구하신다... 전심으로 예수께로 나아가라. 그리하면 그의 축복을 요구할 수 있을 것이다."</p>
+                            <p class="source">정로의 계단, 54</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
