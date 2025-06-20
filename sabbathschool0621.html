@@ -57,13 +57,12 @@
             /* font-style: italic; 이탤릭체 스타일 제거 */
             border-left: 4px solid #e5e7eb;
             padding-left: 1rem;
-            margin-top: 1rem;
             color: #4b5563;
         }
         .source {
             text-align: right;
             font-weight: 500;
-            margin-top: 1rem;
+            margin-top: 0.5rem; /* blockquote와의 간격 조정 */
             color: #6b7280;
         }
     </style>
@@ -171,14 +170,18 @@
                 <div>
                     <h2 class="text-indigo-800">더 깊은 묵상 (Further Insight)</h2>
                      <div class="space-y-4 mt-4">
-                        <blockquote>
-                            <p>"성령의 역사를 거절하는 자는 회개하고 믿을 수 없는 자리에 두는 것이다."</p>
+                        <div>
+                             <blockquote class="mt-0">
+                                <p>"성령의 역사를 거절하는 자는 회개하고 믿을 수 없는 자리에 두는 것이다."</p>
+                            </blockquote>
                             <p class="source">시대의 소망, 321</p>
-                        </blockquote>
-                        <blockquote>
-                            <p>"의심하고 떠는 그대들이여 쳐다보라. 대개 예수께서 살아계셔서 우리를 위하여 간구하신다... 전심으로 예수께로 나아가라. 그리하면 그의 축복을 요구할 수 있을 것이다."</p>
+                        </div>
+                        <div>
+                             <blockquote>
+                                <p>"의심하고 떠는 그대들이여 쳐다보라. 대개 예수께서 살아계셔서 우리를 위하여 간구하신다... 전심으로 예수께로 나아가라. 그리하면 그의 축복을 요구할 수 있을 것이다."</p>
+                            </blockquote>
                             <p class="source">정로의 계단, 54</p>
-                        </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
