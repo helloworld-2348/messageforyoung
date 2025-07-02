@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0705 학생반 안교교과 - 언제나 거기에</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+        }
+        .infographic-card {
+            background-color: white;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-left: 6px solid;
+            transition: box-shadow 0.3s ease;
+        }
+        .infographic-card:hover {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .card-border-blue { border-color: #3b82f6; }
+        .card-border-green { border-color: #10b981; }
+        .card-border-amber { border-color: #f59e0b; }
+        .card-border-sky { border-color: #0ea5e9; }
+        .card-border-rose { border-color: #f43f5e; }
+        .card-border-indigo { border-color: #6366f1; }
+
+        .card-header {
+            cursor: pointer;
+            padding: 1.5rem;
+        }
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding: 0 1.5rem;
+        }
+        .card-content.open {
+            max-height: 5000px; /* 충분히 큰 값으로 설정 */
+            padding-bottom: 1.5rem;
+            transition: max-height 1s ease-in, padding 0.5s ease-in;
+        }
+        .icon-bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            flex-shrink: 0;
+        }
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        blockquote {
+            border-left: 3px solid #e5e7eb;
+            padding-left: 1rem;
+            color: #4b5563;
+        }
+        .source {
+            text-align: right;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        .quote-box {
+            margin-top: 1.5rem;
+        }
+        .quote-lang {
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        .divider {
+            border-top: 1px solid #e5e7eb;
+            margin: 1.5rem 0;
+        }
+        .accordion-arrow {
+            transition: transform 0.3s ease-out;
+        }
+        .open .accordion-arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-2xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-800 mb-2 leading-tight">
+                언제나 거기에<br>
+                <span class="text-2xl md:text-4xl font-bold text-slate-600">(Always There)</span>
+            </h1>
+            <p class="text-lg text-gray-500 mt-3">2025년 7월 5일 안식일학교 교과</p>
+        </header>
+
+        <!-- Cards -->
+        <div class="infographic-card card-border-blue">
+            <div class="p-6 flex flex-col sm:flex-row items-start sm:items-center">
+                <div class="icon-bg bg-blue-500 mb-4 sm:mb-0 sm:mr-4">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <div>
+                    <h2 class="text-blue-800">연구 범위</h2>
+                    <p class="text-gray-600 mt-1 text-sm"><strong>성경 본문:</strong> 마태복음 9:18-26; 마가복음 5:21-43; 누가복음 8:40-56</p>
+                    <p class="text-gray-600 text-sm"><strong>참고 자료:</strong> 시대의 소망 36장</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="infographic-card card-border-green accordion">
+            <div class="card-header flex justify-between items-center">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <div class="icon-bg bg-green-500 mb-4 sm:mb-0 sm:mr-4">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7h1a2 2 0 012 2v5a2 2 0 01-2 2h-1m-6 0H6a2 2 0 01-2-2V9a2 2 0 012-2h1M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h2 class="text-green-800">기억절</h2>
+                </div>
+                <svg class="w-6 h-6 text-gray-500 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <div class="card-content">
+                <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>"예수의 소문을 듣고 무리 가운데 끼어 뒤로 와서 그의 옷에 손을 대니 이는 내가 그의 옷에만 손을 대어도 구원을 받으리라 생각함일러라 이에 그의 혈루 근원이 곧 마르매 병이 나은 줄을 몸에 깨달으니라"</p></blockquote>
+                    <p class="source">마가복음 5:27-29 (개역개정)</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"When she heard about Jesus, she came up behind him in the crowd and touched his cloak, because she thought, 'If I just touch his clothes, I will be healed.' Immediately her bleeding stopped and she felt in her body that she was freed from her suffering."</p></blockquote>
+                    <p class="source">Mark 5:27-29 (NIV)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infographic-card card-border-amber accordion">
+            <div class="card-header flex justify-between items-center">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <div class="icon-bg bg-amber-500 mb-4 sm:mb-0 sm:mr-4">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    </div>
+                    <h2 class="text-amber-800">핵심 통찰</h2>
+                </div>
+                 <svg class="w-6 h-6 text-gray-500 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <div class="card-content">
+                 <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>"그분의 미쁘심을 우리가 선전하는 것은 그리스도를 세상에 나타내기 위해 하늘이 선택한 수단이다...각 개인은 모든 다른 사람들과는 구별되는 생애를 살며 본질적으로 그들과는 다른 경험을 하고 있다. 하나님께서는 우리 자신의 개성으로 특징지어진 찬송을 당신께 상달시키기를 원하신다. 그리스도와 같은 생애가 밑받침이 될 때에 하나님의 은혜의 영광을 찬송하는 귀중한 고백은 영혼의 구원을 위하여 역사하는 강력한 능력이 된다."</p></blockquote>
+                    <p class="source">시대의 소망, 347</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"Our confession of His faithfulness is Heaven's chosen agency for revealing Christ to the world.... Every individual has a life distinct from all others, and an experience differing essentially from theirs. God desires that our praise shall ascend to Him, marked by our own individuality. These precious acknowledgments to the praise of the glory of His grace, when supported by a Christ-like life, have an irresistible power that works for the salvation of souls"</p></blockquote>
+                    <p class="source">The Desire of Ages, p. 347</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="infographic-card card-border-sky accordion">
+             <div class="card-header flex justify-between items-center">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <div class="icon-bg bg-sky-500 mb-4 sm:mb-0 sm:mr-4">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h2 class="text-sky-800">이야기 속으로</h2>
+                </div>
+                 <svg class="w-6 h-6 text-gray-500 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <div class="card-content">
+                <div class="quote-box">
+                    <p class="quote-lang">마가복음 5:21-43 (우리말 성경)</p>
+                    <div class="space-y-3 text-gray-700 leading-relaxed text-sm">
+                        <p>21 예수께서 배를 타고 다시 호수 건너편으로 가셨습니다. 예수께서 호숫가에 계시는 동안 많은 사람들이 예수께로 모여들었습니다.</p>
+                        <p>22 그때 야이로라 불리는 회당장이 예수께 와서 예수를 보고 그 발 앞에 엎드려</p>
+                        <p>23 간절히 애원했습니다. "제 어린 딸이 죽어 갑니다. 제발 오셔서 그 아이에게 손을 얹어 주십시오. 그러면 그 아이가 병이 낫고 살아날 것입니다."</p>
+                        <p>24 그러자 예수께서 그와 함께 가셨습니다. 많은 사람들이 따라가면서 예수를 둘러싸고 밀어 댔습니다.</p>
+                        <p>25 그 가운데는 혈루병으로 12년 동안 앓고 있던 여인도 있었습니다.</p>
+                        <p>26 이 여인은 여러 의사들에게 치료를 받으며 고생도 많이 하고 재산도 다 잃었지만 병이 낫기는커녕 악화될 뿐이었습니다.</p>
+                        <p>27 그러던 중 예수의 소문을 듣고 뒤에서 무리들 틈에 끼어들어 와서 예수의 옷자락에 손을 댔습니다.</p>
+                        <p>28 '예수의 옷자락만 닿아도 내 병이 나을 것이다'라고 생각한 것입니다.</p>
+                        <p>29 그러자 곧 출혈의 근원이 마르면서 이 여인은 자신의 병이 나은 것을 몸으로 느낄 수 있었습니다.</p>
+                        <p>30 동시에 예수께서도 자신의 몸에서 능력이 나간 것을 알아차리셨습니다. 예수께서 사람들을 돌아보며 물으셨습니다. "누가 내 옷자락에 손을 대었느냐?"</p>
+                        <p>31 제자들이 대답했습니다. "이렇게 많은 사람들이 밀어 대는 것을 보시면서 '누가 손을 대었느냐'고 물으십니까?"</p>
+                        <p>32 그러나 예수께서는 누가 옷을 만졌는지 알아보려고 둘러보셨습니다.</p>
+                        <p>33 그러자 자기에게 일어난 일을 알고 있는 이 여인이 와서 예수의 발 앞에 엎드려 두려움에 떨면서 사실대로 말했습니다.</p>
+                        <p>34 예수께서 여인에게 말씀하셨습니다. "딸아, 네 믿음이 너를 구원했다. 이제 안심하고 가거라. 그리고 병에서 해방돼 건강하여라."</p>
+                        <p>35 예수의 말씀이 채 끝나기도 전에 야이로 회당장의 집에서 사람들이 와서 말했습니다. "따님이 죽었습니다. 선생님께 더 이상 폐 끼칠 게 뭐가 있겠습니까?"</p>
+                        <p>36 예수께서 그 말에 아랑곳하지 않으시고 회당장에게 말씀하셨습니다. "두려워하지 말고 믿기만 하여라."</p>
+                        <p>37 그리고 예수께서 베드로와 야고보와 야고보의 동생 요한 외에는 아무도 따라오지 못하게 하셨습니다.</p>
+                        <p>38 회당장의 집에 이르자 예수께서 많은 사람들이 울며 통곡하며 소란스러운 것을 보시고는</p>
+                        <p>39 집 안으로 들어가 그들에게 말씀하셨습니다. "어째서 소란하며 울고 있느냐? 아이는 죽은 것이 아니라 그냥 자고 있는 것이다."</p>
+                        <p>40 그러자 사람들이 예수를 비웃었습니다. 예수께서 사람들을 모두 밖으로 내보내시고 아이의 부모와 함께 있는 제자들만 데리고 아이가 있는 방으로 들어가셨습니다.</p>
+                        <p>41 예수께서 그 아이의 손을 잡고는 아이에게 "달리다굼!" 하고 말씀하셨습니다. 이 말은 "소녀야, 내가 네게 말한다. 일어나거라!" 하는 뜻입니다.</p>
+                        <p>42 그러자 곧 아이가 일어나더니 걸어 다녔습니다. 이 소녀는 열두 살이었습니다. 이 일을 본 사람들은 몹시 놀랐습니다.</p>
+                        <p>43 예수께서 이 일을 아무에게도 알리지 말라고 엄하게 말씀하셨습니다. 그리고 "아이에게 먹을 것을 주라" 하고 말씀하셨습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="infographic-card card-border-rose accordion">
+            <div class="card-header flex justify-between items-center">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <div class="icon-bg bg-rose-500 mb-4 sm:mb-0 sm:mr-4">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    </div>
+                    <h2 class="text-rose-800">핵심 구절</h2>
+                </div>
+                 <svg class="w-6 h-6 text-gray-500 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <div class="card-content">
+                <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>하나님이 고독한 자들은 가족과 함께 살게 하시며 갇힌 자들은 이끌어 내사 형통하게 하시느니라 오직 거역하는 자들의 거처는 메마른 땅이로다</p></blockquote>
+                    <p class="source">시편 68:6 (개역개정)</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"God sets the lonely in families, he leads out the prisoners with singing"</p></blockquote>
+                    <p class="source">Psalm 68:6 (NIV)</p>
+                </div>
+                <hr class="divider">
+                <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>주여 나는 외롭고 괴로우니 내게 돌이키사 나에게 은혜를 베푸소서</p></blockquote>
+                    <p class="source">시편 25:16 (개역개정)</p>
+                </div>
+                 <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"Turn to me and be gracious to me, for I am lonely and afflicted"</p></blockquote>
+                    <p class="source">Psalm 25:16 (NIV)</p>
+                </div>
+                <hr class="divider">
+                 <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>예수는 물러가사 한적한 곳에서 기도하시니라</p></blockquote>
+                    <p class="source">누가복음 5:16 (개역개정)</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"But Jesus often withdrew to lonely places and prayed"</p></blockquote>
+                    <p class="source">Luke 5:16 (NIV)</p>
+                </div>
+                <hr class="divider">
+                <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>주께서는 보셨나이다 주는 재앙과 원한을 감찰하시고 주의 손으로 갚으려 하시오니 외로운 자가 주를 의지하나이다 주는 벌써부터 고아를 도우시는 이시니이다</p></blockquote>
+                    <p class="source">시편 10:14 (개역개정)</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"But you, God, see the trouble of the afflicted; you consider their grief and take it in hand. The victims commit themselves to you; you are the helper of the fatherless"</p></blockquote>
+                    <p class="source">Psalm 10:14 (NIV)</p>
+                </div>
+                <hr class="divider">
+                <div class="quote-box">
+                    <p class="quote-lang">KOR</p>
+                    <blockquote><p>여호와의 속량함을 받은 자들이 돌아오되 노래하며 시온에 이르러 그들의 머리 위에 영영한 희락을 띠고 기쁨과 즐거움을 얻으리니 슬픔과 탄식이 사라지리로다</p></blockquote>
+                    <p class="source">이사야 35:10 (개역개정)</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"They will enter Zion with singing; everlasting joy will crown their heads. Gladness and joy will overtake them, and sorrow and sighing will flee away"</p></blockquote>
+                    <p class="source">Isaiah 35:10 (NIV)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infographic-card card-border-indigo accordion">
+            <div class="card-header flex justify-between items-center">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center">
+                    <div class="icon-bg bg-indigo-500 mb-4 sm:mb-0 sm:mr-4">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" /></svg>
+                    </div>
+                    <h2 class="text-indigo-800">더 깊은 묵상</h2>
+                </div>
+                 <svg class="w-6 h-6 text-gray-500 accordion-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </div>
+            <div class="card-content">
+                 <div class="quote-box">
+                     <p class="quote-lang">KOR</p>
+                     <blockquote><p>"신앙에 관하여 경박하게 말하거나 주린 심령과 산 믿음 없이 기도하는 것은 아무런 소용이 없다."</p></blockquote>
+                    <p class="source">시대의 소망, 347</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"To talk of religion in a casual way, to pray without soul hunger and living faith, avails nothing."</p></blockquote>
+                   <p class="source">The Desire of Ages, p. 347</p>
+               </div>
+               <hr class="divider">
+                <div class="quote-box">
+                     <p class="quote-lang">KOR</p>
+                     <blockquote><p>"인간의 사랑은 변할 수도 있다. 그러나 그리스도의 사랑은 변할 줄을 모른다. 우리가 도움을 얻고자 그분께 부르짖으면, 그분께서는 우리를 구원하시고자 당신의 손을 펴신다."</p></blockquote>
+                    <p class="source">치료봉사, 72</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-lang">ENG</p>
+                    <blockquote><p>"Human love may change, but Christ's love knows no change. When we cry to Him for help, His hand is stretched out to save."</p></blockquote>
+                   <p class="source">The Ministry of Healing, p. 72</p>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion .card-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                header.parentElement.classList.toggle('open');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    content.style.paddingBottom = '0';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.paddingBottom = '1.5rem';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
